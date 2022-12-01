@@ -1,4 +1,1 @@
 # sgroup-learning
-
-abc
-jadnbc
