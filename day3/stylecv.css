@@ -1,0 +1,469 @@
+
+
+html {
+    font-family: "Inter", sans-serif;
+    background-color: #fff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    color: #373737;
+    font-size: 14px;
+}
+/*1.>>>Header Style ----------------------------------------------------------------*/
+.header {
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 50px 0;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.header-inner {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+}
+
+.name span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(18, 208, 78);
+    border-radius: 4px;
+    color: rgb(14, 14, 14);
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.name-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+.logo {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo li {
+    margin-left: 12px;
+}
+
+.logo li:first-child {
+    margin-left: 0;
+}
+
+.logo li a {
+    text-decoration: none;
+    border-radius: 100%;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*2.>>>Banner Style ----------------------------------------------------------------*/
+.banner {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 5px;
+}
+
+.img {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.content {
+    width: 50%;
+}
+
+.img img {
+    max-width: 100%;
+    border: none;
+    outline: none;
+    height: auto;
+    height: 514px;
+}
+
+.banner section {
+    padding-left: 70px;
+    padding-right: 100px;
+}
+
+.banner section h1 span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.banner section h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000;
+}
+
+.ds-numbervalulist {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.ds-numbervalulist li {
+    margin-right: 60px;
+}
+
+.ds-numbervalulist li:last-child {
+    margin-right: 0;
+}
+
+.ds-numbervalulist strong {
+    display: block;
+    color: #f26464;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.ds-numbervalulist span {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/*3.>>>ABOUT Style ----------------------------------------------------------------*/
+.about {
+    padding: 60px 100px 120px 100px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.about-heading {
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-bottom: 3px solid #F26464;
+    padding-bottom: 7px;
+    margin-bottom: 23px;
+}
+
+.about p {
+    color: #373737;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.about-button {
+
+    margin: auto;
+    width: fit-content;
+
+
+}
+.about-button button {
+    width: 233px;
+    height: 51px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #f26464;
+    background-color: #FFF;
+    border-radius: 60px;
+    margin: auto;
+    text-transform: uppercase;
+    border: 2px solid #f26464;
+
+}
+
+.about-button button:hover {
+    background-color: #f26464;
+    color: #fff;
+}
+/*4.>>>Skill Style ----------------------------------------------------------------*/
+.skill {
+    padding: 0px 100px 105px 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coreskill {
+    width: 50%;
+}
+
+.otherskill {
+    width: 50%;
+}
+
+.ds-skills-list {
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 11px;
+}
+
+.ds-skills-list li {
+    display: inline-block;
+    color: #373737;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    border-radius: 27px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+/*5.>>>Experience Style ----------------------------------------------------------------*/
+.exp {
+    padding: 0px 100px 105px 100px;
+}
+
+.exp-content {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.year2019-present {
+    width: 50%;
+}
+
+.year2018-2019 {
+    width: 50%;
+
+}
+
+span.ds-year {
+    color: #373737;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+span.ds-department {
+    color: #373737;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.ds-experience-list p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.ds-experience-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.ds-experience-list ul li {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/*6.>>>Work Style ----------------------------------------------------------------*/
+.works {
+    padding: 0px 100px 105px 100px;
+}
+
+.ds-work-section {
+    padding-bottom: 80px;
+}
+
+.work-list {
+    padding-left: 70px;
+    padding-top: 40px;
+    padding-right: 70px;
+    background-color: #f6f8fa;
+    margin-bottom: 40px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.work-list section {
+    padding-top: 20px;
+    padding-right: 120px;
+}
+
+.work-tilte {
+    color: #000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.work-list p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.work-list button {
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #f26464;
+    background-color: #FFF;
+    border-radius: 60px;
+    margin: auto;
+    text-transform: uppercase;
+    border: 2px solid #f26464
+}
+
+.work-list button:hover {
+    background-color: #f26464;
+    color: #fff;
+}
+/*7.>>>Footer Style ----------------------------------------------------------------*/
+.footer {
+    background-color: #000
+}
+
+.footer-content {
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 100px;
+}
+
+.footer section {
+    margin: auto;
+    padding: 100px;
+}
+
+.footer section span {
+    margin: auto;
+    width: fit-content;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.footer section h4 {
+    margin: auto;
+    width: fit-content;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.footer section p {
+    margin: auto;
+    width: fit-content;
+    letter-spacing: 1.13px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.copyright a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright a:hover {
+    color: #f26464;
+}
+
+.footer-content button {
+    margin: 0px 130px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #f26464;
+    background-color: black;
+    border-radius: 60px;
+    text-transform: uppercase;
+    border: 2px solid #f26464
+}
+
+.footer-content button:hover {
+    background-color: #f26464;
+    color: #fff;
+}

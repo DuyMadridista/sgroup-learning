@@ -1,0 +1,5 @@
+cách đặt tên: BEM: BlocK- ELEMENT- MODIFIER
+
+độ ưu tiên: important> inline> ID> class
+display flex: dàn layout ngang
+aline
