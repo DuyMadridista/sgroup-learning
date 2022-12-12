@@ -1,0 +1,18 @@
+*background
+-background-color
+-background-image
+-background-repeat
+-background-position
+-background-attachment
+-background-size
+-background-clip:- border, padding, content-box;
+*object-fit
+*display
+*visibility
+*opacity
+*flex
+*position: fixed, sticky,relative, absolute,initial,inherit,static
+*transform
+*pseudo
+    -class
+    -element
