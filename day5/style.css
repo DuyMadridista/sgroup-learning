@@ -1,61 +1,32 @@
-.heart {
-    flex-wrap: wrap;
-    width: 200px;
-    height: 200px;
+*{
+    background-color: black;
+}
+.animation div{
+    width: 100px;
+    height: 100px;
+    border-radius: 100rem;
+    border-top: 5px solid blue ;
     top: 50%;
-    left: 50%;
-    z-index: 1;
-    display: block;
+    left: 50% ;
     position: absolute;
-    transform: translate(-50%, -50%);
-    animation: heart 1s ease infinite
+    animation: spinner 1s infinite ease-in-out;
 }
-.text{
-    flex-wrap: wrap;
-    color: snow;
-    display: inline-block;
-    top: 49%; 
-    z-index: 2;
-    text-align: center;
-    left: 47.55%;
-    position: absolute;
-    animation:text 1s ease infinite
-    
-    
+@keyframes spinner{
+    0%{transform: rotate(5deg);} 
+    100%{transform: rotate(360deg);}
 }
-@keyframes text{
-    50%{
-        transform: scale(0.18);
-
-    }
-    100%{transform: scale(1);}
+.animation .div2 {
+    border-radius: 100rem;
+    border-color: red;
+    animation-delay: 0.1s;
 }
-@keyframes heart {
-    50% {
-        transform: translate(-50%, -50%) scale(.18, .18)
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1)
-    }
+.animation .div3 {
+    border-radius: 100rem;
+    border-color: green;
+    animation-delay: 0.2s;
 }
-
-.heart div {
-    background: #ff0000;
-    width: 71px;
-    height: 126px;
-    top: 40px;
-    display: block;
-    position: absolute;
-    border-radius: 50%
-}
-
-.left {
-    left: 45px;
-    transform: rotate(330deg);
-}
-
-.right {
-    right: 45px;
-    transform: rotate(30deg);
+.animation .div4 {
+    border-radius: 100rem;
+    border-color: yellow;
+    animation-delay: 0.3s;
 }
