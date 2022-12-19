@@ -1,0 +1,13 @@
+column: layout dạng cột
+text truncate: cắt ngắn chuỗi
+grid:  layout dạng lưới
+grid area: chia lưới
+transition
+ transition.png
+transform : https://hocwebchuan.com/reference/cssSection/css3/pr_transform.php
+    -rotate: xoay
+    -translate: dịch chuyển
+    -scale: thu phóng
+    -skew: nghiêng
+animation
+    https://hocwebchuan.com/reference/cssSection/css3/pr_animation.php

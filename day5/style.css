@@ -1,0 +1,61 @@
+.heart {
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: heart 1s ease infinite
+}
+.text{
+    flex-wrap: wrap;
+    color: snow;
+    display: inline-block;
+    top: 49%; 
+    z-index: 2;
+    text-align: center;
+    left: 47.55%;
+    position: absolute;
+    animation:text 1s ease infinite
+    
+    
+}
+@keyframes text{
+    50%{
+        transform: scale(0.18);
+
+    }
+    100%{transform: scale(1);}
+}
+@keyframes heart {
+    50% {
+        transform: translate(-50%, -50%) scale(.18, .18)
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1)
+    }
+}
+
+.heart div {
+    background: #ff0000;
+    width: 71px;
+    height: 126px;
+    top: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 50%
+}
+
+.left {
+    left: 45px;
+    transform: rotate(330deg);
+}
+
+.right {
+    right: 45px;
+    transform: rotate(30deg);
+}
