@@ -1,0 +1,5 @@
+position: absolute: tương tác với relative gần nhất
+        relative: mặc định + set được top left....
+        static: mặc định
+lazy loading: lăn xuống phần tử mới chuyển động
+parallax-scrolling
