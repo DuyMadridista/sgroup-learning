@@ -18,7 +18,7 @@ body {
 .container{
     width: 100%;
     margin: auto;
-    padding: 0 7vw;
+    padding: 0 12vw;
 }
 .header-inner{
     display: flex;
@@ -396,7 +396,7 @@ body {
     padding: 0.5rem 0;
 
 }
-.service-list li span{
+.awesome-icon{
     text-align: center;
     position: absolute;
     width: 54px;
@@ -440,4 +440,68 @@ body {
 .service-img-inner img{
     width: 100%;
     height: auto;
+}
+.discover{
+    padding: 100px 0;
+    position: relative;
+}
+ul li{
+    list-style: none;
+}
+.discover-img{
+    max-width: 50%;
+    flex: 0 0 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.discover-content{
+    max-width: 50%;
+    flex: 0 0 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.discover-content-inner{
+    padding: 0;
+}
+.discover-content-inner h2{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: rgb(29, 28, 28);
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.discover-content-inner p{
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+.discover-content-inner ul{
+    font-size: 18px;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+}
+.discover-content-inner ul li{
+    line-height: 1.3;
+    padding: 0.5rem 0;
+}
+.discover-content-inner ul li .media .tick-icon{ 
+    color: #6c66ff;
+}
+.icon{
+    display: flex;
+    flex: auto;
+}
+.icon .awesome-icon{
+    position: unset;
 }
