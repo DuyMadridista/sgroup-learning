@@ -15,12 +15,12 @@
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <a  class="logo" href="#">
+                <a id="changeColor" class="logo" href="#">
                     <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo-white.png" alt="logo" >
                 </a>
                 <div class="navbar">
                     <div class="dropdown">
-                        <button class="dropbtn">Home 
+                        <button class="dropbtn" id="changeColor">Home 
                         </button>
                         <div class="dropdown-content">
                             <a href="#">HomePage 1</a>
@@ -30,9 +30,9 @@
                             <a href="#">HomePage 5</a>
                         </div>
                     </div>
-                    <a href="#Features">Features</a>
+                    <a href="#Features" id="changeColor">Features</a>
                     <div class="dropdown">
-                        <button class="dropbtn">Page 
+                        <button class="dropbtn" id="changeColor">Page 
                         </button>
                         <div class="dropdown-content">
                             <div class="content">
@@ -70,20 +70,38 @@
                                     <a href="#">Reset Password</a>
                                 </div>
                             </div>
-                            <a href="#">Reviews</a>
-                            <a href="#">FAQ</a>
-                            <a href="#">Contact</a>
-                            <a href="#">More Coming Soon</a>
+                            <a href="#" id="changeColor">Reviews</a>
+                            <a href="#" id="changeColor">FAQ</a>
+                            <a href="#" id="changeColor">Contact</a>
+                            <a href="#" id="changeColor">More Coming Soon</a>
                         </div>
                     </div>
                     <a href="#Screenshots">Screenshots</a>
                     <a href="#Pricing">Pricing</a>
                     <a href="#Contact">Contact</a>
+                    <a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div> 
                 </div>
             </div>
         </div>
+        <script>
+            
+        </script>
     </header>
+    <script>
+        const header = document.querySelector("header");
+
+window.addEventListener ("scroll", function() {
+	header.classList.toggle ("sticky", window.scrollY > 0);
+});
+const navbar_changeColor = document.querySelector("#changeColor");
+
+window.addEventListener ("scroll", function() {
+	navbar_changeColor.classList.toggle ("sticky-changeColor", window.scrollY > 0);
+});
+    </script>
     <section class="home">
         <div class="purple-block">
             <div class="container">
@@ -347,7 +365,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
                 </div>
             </div>
-            <div class="row" style="padding-top: 0;">
+            <div class="row" style="padding-top: 0;flex-wrap: wrap;">
                 <div class="installing-step-container">
                     <div class="installing-step-inner">
                         <div class="img">
@@ -374,6 +392,180 @@
                         <h3>Enjoy the features!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screenshots">
+        <div class="container">
+            <div class="feature" style=" padding-bottom: 0">
+                <div class="row-justify-content">
+                    <div class="content">
+                        <div class="content-inner" style="padding-bottom: 60px;">
+                            <div class="content-heading">
+                                <i class="fa-regular fa-lightbulb text-primary"></i>
+                                <span class="text-primary"> Awesome's</span>
+                                Interface
+                            </div>
+                            <h2> Simple & Beautiful Interface</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display: block; padding: 0;">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/screenshots/4.jpg" style="object-fit: scale-down; height: 500px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/screenshots/5.jpg" style="object-fit: scale-down;height: 500px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/screenshots/3.jpg" style="object-fit: scale-down;height: 500px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/screenshots/2.jpg" style="object-fit: scale-down;height: 500px;">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://theme-land.com/sapp/demo/assets/img/screenshots/1.jpg" style="object-fit: scale-down;height: 500px;">
+                    </div>
+                </div>
+                    <br>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+                        function showSlides() {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides,3000);// Change image every 2 seconds
+                        }
+                    </script>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <div class="feature" style="padding-bottom:0;">
+                <div class="row-justify-content">
+                    <div class="content">
+                        <div class="content-inner">
+                            <div class="content-heading">
+                                <i class="fa-regular fa-lightbulb text-primary"></i>
+                                <span class="text-primary"> Customer's</span>
+                                Reviews
+                            </div>
+                            <h2> What Our Customers Are Saying</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis animi odio commodi dicta, delectus laboriosam reprehenderit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 0; padding-bottom: 5rem;">
+                <div class="single-review-container">
+                    <div class="single-review-card">
+                        <div class="card-top">
+                            <div class="star-rated">
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </div>
+                            <h4>Excellent service & support!!</h4>
+                            <div class="review-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                            </div>
+                            <div class="quot-icon">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="" style="width: 4rem;height: 4rem;">
+                            </div>
+                        </div>
+                        <div class="reviewer">
+                            <div class="reviewer-thumb">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-1.png" style="border-radius: 100%;width: 5rem;height: 5rem;" alt="">
+                            </div>
+                            <div class="reviewer-infor">
+                                <h5 class="reviewer-name">Junaid Hasan</h5>
+                                <h6 class="reviewer-job">CEO, Themeland</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-review-container">
+                    <div class="single-review-card">
+                        <div class="card-top">
+                            <div class="star-rated">
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: yellow;"></i>
+                            </div>
+                            <h4>Nice work! Keep it up</h4>
+                            <div class="review-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                            </div>
+                            <div class="quot-icon">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="" style="width: 4rem;height: 4rem;">
+                            </div>
+                        </div>
+                        <div class="reviewer">
+                            <div class="reviewer-thumb">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-2.png" style="border-radius: 100%;width: 5rem;height: 5rem;" alt="">
+                            </div>
+                            <div class="reviewer-infor">
+                                <h5 class="reviewer-name">Junaid Hasan</h5>
+                                <h6 class="reviewer-job">CEO, Themeland</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-review-container">
+                    <div class="single-review-card">
+                        <div class="card-top">
+                            <div class="star-rated">
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                                <i class="fa-solid fa-star" style="color: yellow;"></i>
+                            </div>
+                            <h4>Great support!!</h4>
+                            <div class="review-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                            </div>
+                            <div class="quot-icon">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/icon/quote.png" alt="" style="width: 4rem;height: 4rem;">
+                            </div>
+                        </div>
+                        <div class="reviewer">
+                            <div class="reviewer-thumb">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/avatar/avatar-3.png" style="border-radius: 100%;width: 5rem;height: 5rem;" alt="">
+                            </div>
+                            <div class="reviewer-infor">
+                                <h5 class="reviewer-name">Junaid Hasan</h5>
+                                <h6 class="reviewer-job">CEO, Themeland</h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
