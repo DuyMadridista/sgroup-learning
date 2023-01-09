@@ -12,6 +12,29 @@
     <title>Landing Page</title>
 </head>
 <body>
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top" style="display: block;">
+        <svg class="svg-inline--fa fa-arrow-up fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+            <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+            </path>
+        </svg>
+        <script>
+            // When the user scrolls down 500px from the top of the document, show the button
+            let scrollup = document.getElementById("scrollUp");
+            window.onscroll = function() { scrollFunction() };
+            function scrollFunction(){
+                if(document.body.scrollTop>500||document.documentElement.scrollTop > 500)
+                    { scrollup.style.display="block";}
+                else { scrollup.style.display="none";}
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            scrollup.onclick = function() {topFunction()};
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                }
+        </script>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header-inner">
@@ -93,14 +116,10 @@
     <script>
         const header = document.querySelector("header");
 
-window.addEventListener ("scroll", function() {
-	header.classList.toggle ("sticky", window.scrollY > 0);
-});
-const navbar_changeColor = document.querySelector("#changeColor");
-
-window.addEventListener ("scroll", function() {
-	navbar_changeColor.classList.toggle ("sticky-changeColor", window.scrollY > 0);
-});
+            window.addEventListener ("scroll", function() {
+            header.classList.toggle ("sticky", window.scrollY > 700);
+            });
+            
     </script>
     <section class="home">
         <div class="purple-block">
@@ -838,6 +857,206 @@ window.addEventListener ("scroll", function() {
             </div>
         </div>
     </section>
-    <footer></footer>
+    <section class="subcribe">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="subcribe-text-container">
+                    <div class="subcribe-text">
+                        <h2>Subscribe to get updates</h2>
+                        <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
+                        <div class="subcribe-form">
+                            <form action="">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit" style="width: 100%;">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="feature" style="padding-bottom:0;">
+                <div class="row-justify-content">
+                    <div class="content">
+                        <div class="content-inner">
+                            <h2> Stay Tuned</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="contact-infor-container">
+                    <div class="contact-infor">
+                        <p style="padding-bottom: 1rem;" >
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                        <ul>
+                            <li style="padding-bottom: 0.7rem;">
+                                <a href="">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+                                    <p>Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</p>
+                                </a>
+                            </li>
+                            <li style="padding-bottom: 0.7rem;">
+                                <a href="">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <p>+84 819 6852 0225 5456</p>
+                                </a>
+                            </li>
+                            <li style="padding-bottom: 0.7rem;">
+                                <a href="">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <p>vanduyluu432003@gmail.com</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <form action="">
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                            <input type="text" placeholder="Subject">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message" style="height: 7rem;"></textarea>
+                            <button style=" width: 100%;" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="height-emulator" style="height: 585px;float: left;"></section>
+    <footer class="footer">
+        <div class="footer-top" style="padding: 100px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-item-container">
+                        <div class="footer-item">
+                            <a href="">
+                                <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo.png" alt="">
+                            </a>
+                            <p style="margin: 1rem 0;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.
+                            </p>
+                            <div class="social-media-icon">
+                                <a href="" style="background-color:#3b5999;">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href=""style="background-color:#55acee;">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href=""style="background-color:#dd4b39;">
+                                    <i class="fa-brands fa-google-plus"></i>
+                                </a>
+                                <a href=""style="background-color:#00b489;">
+                                    <i class="fa-brands fa-vine"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-item-container">
+                        <div class="footer-item">
+                            <h3>Userful Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">About</a>
+                                </li>
+                                <li>
+                                    <a href="">Services</a>
+                                </li>
+                                <li>
+                                    <a href="">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item-container">
+                        <div class="footer-item">
+                            <h3>Product Help</h3>
+                            <ul>
+                                <li>
+                                    <a href="">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="">Support</a>
+                                </li>
+                                <li>
+                                    <a href="">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item-container">
+                        <div class="footer-item">
+                            <h3>Download</h3>
+                            <div class="Download-button">
+                                <a href="">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/google-play-black.png" style="padding-bottom: 15px;width: 90%;" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="https://theme-land.com/sapp/demo/assets/img/icon/app-store-black.png" style="padding-bottom: 15px;width: 90%;"  alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-bottom-container">
+                        <div class="copyright-area">
+                            <div class="copyright-left">
+                                © Copyrights 2022 sApp All rights reserved.
+                            </div>
+                            <div class="copyright-right">
+                                Made with <i class="fa-solid fa-heart"></i> by <a href="">Theme Land</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var footer = document.querySelector('.footer');
+
+            // When the user scrolls, run the function
+            window.onscroll = function() {
+              // Get the current scroll position
+                var a = window.pageYOffset || document.documentElement.scrollTop;
+            
+              // If the scroll position is greater than the height of the footer, add the "hidden" class to the footer
+                if (a > 10000) {
+                footer.classList.remove('hidden');
+                } else {
+                // Otherwise, remove the "hidden" class
+                footer.classList.add('hidden');
+                }
+            };
+        </script>
+    </footer>
 </body>
 </html>
