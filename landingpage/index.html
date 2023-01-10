@@ -41,9 +41,12 @@
                 <a id="changeColor" class="logo" href="#">
                     <img src="https://theme-land.com/sapp/demo/assets/img/logo/logo-white.png" alt="logo" >
                 </a>
-                <div class="navbar">
+                <div class="navbar" id="Mynavbar">
+                    <a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                     <div class="dropdown">
-                        <button class="dropbtn" id="changeColor">Home 
+                        <button class="dropbtn so-xuong" id="changeColor">Home 
                         </button>
                         <div class="dropdown-content">
                             <a href="#">HomePage 1</a>
@@ -55,11 +58,11 @@
                     </div>
                     <a href="#Features" id="changeColor">Features</a>
                     <div class="dropdown">
-                        <button class="dropbtn" id="changeColor">Page 
+                        <button class="dropbtn so-xuong" id="changeColor">Page 
                         </button>
                         <div class="dropdown-content">
                             <div class="content">
-                                <a href="#">Inner Page</a>
+                                <a href="#" class="so-xuong">Inner Page</a>
                                 <div class="small-dropdown">
                                     <a href="#">Pricing</a>
                                     <a href="#">Download</a>
@@ -70,7 +73,7 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <a href="#">Blog Page</a>
+                                <a href="#" class="so-xuong">Blog Page</a>
                                 <div class="small-dropdown">
                                     <a href="#">Blog- 2 Column</a>
                                     <a href="#">Blog- 3 Column</a>
@@ -79,14 +82,14 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <a href="#">Block Details</a>
+                                <a href="#"class="so-xuong">Block Details</a>
                                 <div class="small-dropdown">
                                     <a href="#">Block- Details Left Sidebar</a>
                                     <a href="#">Block- Details Right Sidebar</a>
                                 </div>
                             </div>
                             <div class="content">
-                                <a href="#">Account</a>
+                                <a href="#"class="so-xuong">Account</a>
                                 <div class="small-dropdown">
                                     <a href="#">login</a>
                                     <a href="#">sign up</a>
@@ -102,16 +105,21 @@
                     <a href="#Screenshots">Screenshots</a>
                     <a href="#Pricing">Pricing</a>
                     <a href="#Contact">Contact</a>
-                    <a href="javascript:void(0);" class="bar-icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                    
                 </div> 
                 </div>
             </div>
         </div>
         <script>
-            
-        </script>
+            function myFunction() {
+            var x = document.getElementById("Mynavbar");
+            if (x.className === "navbar") {
+            x.className += " responsive";
+            //x.style.display = "block";
+            } else {
+            x.className = "navbar";
+            }
+            }        </script>
     </header>
     <script>
         const header = document.querySelector("header");
