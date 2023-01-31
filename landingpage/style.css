@@ -59,6 +59,7 @@ svg:not(:root).svg-inline--fa {
 }
 .header{
     padding-top: 2vw ;
+    padding-bottom: 0.5rem;
     width: 100%;
     position: fixed;
     background-color: transparent;
