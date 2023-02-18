@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header {
+    padding: 3% 0;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-inner .logo {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    max-width: 200px;
+}
+
+.logo .anh1 {
+    width: 100%;
+    height: 100%;
+}
+
+.decription {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+    max-width: 200px;
+}
+
+.decription .anh2 {
+    max-width: 20%;
+    max-height: 10%;
+    position: relative;
+    bottom: -7px;
+}
+
+.AddBtn {
+    display: flex;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-around;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.AddBtn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.AddBtn i {
+    font-size: 20px;
+    padding-right: 0.5rem;
+}
+
+.status-outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.status-area {
+    padding-top: 12rem;
+}
+
+.status-outer .status {
+    max-width: 32%;
+    flex: 0 0 32%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Todo {
+    background-color: red;
+}
+
+.Doing {
+    background-color: yellow;
+}
+
+.Done {
+    background-color: rgb(69, 231, 69);
+}
+
+.list-count {
+    width: 5%;
+    border-radius: 10%;
+}
+
+.Todo .list-count {
+    background-color: pink;
+}
+
+.Doing .list-count {
+    background-color: rgb(7, 153, 244);
+}
+
+.Done .list-count {
+    background-color: rgb(231, 142, 69);
+}
+
+.mainBody-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2% 0;
+}
+
+.mainBody-inner .List-form {
+    max-width: 32%;
+    flex: 0 0 32%;
+}
+
+.TodoList {
+    background-color: rgb(245, 158, 158);
+}
+
+.DoingList {
+    background-color: rgb(250, 253, 149);
+}
+
+.DoneList {
+    background-color: rgb(158, 245, 158);
+}
+
+.formContainer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+    margin: 5% 3%;
+}
+
+.formContainer .FormTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Title-Content {
+    border-bottom: #DBDBDB 1px solid;
+}
+
+.Kind-Title {
+    font-size: 20px;
+    font-weight: 500;
+    color: blue;
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+}
+
+.Main-Title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
+
+.Title-Btn {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -1rem;
+}
+
+.Title-Btn .editBtn {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+.Title-Btn .deleteBtn {
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+.form-details {
+    padding: 2% 0;
+}
+
+.form-details p {
+    font-size: 15px;
+}
+
+.deadline {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 10px;
+}
+
+.deadline .deadline-date {
+    padding-left: 0.5rem;
+}
