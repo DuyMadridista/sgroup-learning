@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    padding: 3% 0;
+    padding: 1% 0;
     background: #fff;
     position: fixed;
     width: 100%;
@@ -34,7 +34,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     color: #000;
-    max-width: 200px;
+    max-width: 175px;
 }
 
 .logo .anh1 {
@@ -50,7 +50,7 @@ body {
 }
 
 .decription .anh2 {
-    max-width: 20%;
+    max-width: 13%;
     max-height: 10%;
     position: relative;
     bottom: -7px;
@@ -80,7 +80,7 @@ body {
     padding-right: 0.5rem;
 }
 .mainBody{
-    padding-top: 11rem;
+    padding-top: 6.5rem;
 }
 .status {
     padding: 1rem;
@@ -88,19 +88,19 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .Todo {
-    background-color: red;
+    background-color: #00A6DA;;
 }
 
 .Doing {
-    background-color: yellow;
+    background-color: #CCAC038F;;
 }
 
 .Done {
-    background-color: rgb(69, 231, 69);
+    background-color: #3BC057;;
 }
 
 .list-count {
@@ -133,18 +133,31 @@ body {
 }
 
 .TodoList {
-    padding: 1rem 0;
-    background-color: rgb(245, 158, 158);
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 520px;
+    border-radius: 8px;
+    padding: 0.2rem 0;
+    
 }
 
 .DoingList {
-    padding: 1rem 0;
-    background-color: rgb(250, 253, 149);
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 520px;
+    border-radius: 8px;
+    padding: 0.2rem 0;
+
 }
 
 .DoneList {
-    padding: 1rem 0;
-    background-color: rgb(158, 245, 158);
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 520px;
+    border-radius: 8px;
+    padding: 0.2rem 0;
 }
 
 .formContainer {
@@ -285,21 +298,29 @@ body {
     }
 }
 .adding-form{
+    position: relative;
     display: none;
     position: fixed;
     box-sizing: border-box;
-    top: 25%;
-    left:25%;
-    right: 25%;
-    bottom: 25%;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left:0%;
+    /* right: 25%;
+    bottom: 25%; */
     margin: auto;
     z-index: 100000000;
     background: rgba(0, 0, 0, 0.5);
 }
 .adding-form form{
+    position: absolute;
     display: flex;
     margin: auto;
     /* max-width: 25%; */
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -313,7 +334,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 .adding-form form label{
@@ -337,4 +358,20 @@ body {
     padding: 0 1rem;
     text-align: center;
     cursor: pointer;
+}
+.radioBtn{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.radioChoise{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+.radioChoise input{
+    margin-right: 0.5rem;
 }
