@@ -71,23 +71,25 @@ function handleCreateForm() {
 //edit data
 function HandleEditData(id) { 
     let dataEdit = document.querySelector('.data-item-' + id)
-    let category = dataEdit.querySelector('.Kind-Title"]');
-    let title = dataEdit.querySelector('.Main-Title"]');
+    let category = dataEdit.querySelector('.Kind-Title');
+    let title = dataEdit.querySelector('.Main-Title');
     let description = dataEdit.querySelector('.description');
+    let date = dataEdit.querySelector('.deadline-date');
     document.querySelector('input[name="titleEdit"]').value = title.innerText;
     document.querySelector('input[name="categoryEdit"]').value = category.innerText;
     document.querySelector('textarea[name="descriptionEdit"]').value = description.innerText;
-    document.querySelector('input[value="Todo"]') = true;
     let getAddEditBtn = document.getElementById("AddEditBtn");
     getAddEditBtn.onclick = function () {
-        let title = document.querySelector('input[name="title"]').value;
-        let category = document.querySelector('input[name="category"]').value;
-        let description = document.querySelector('textarea[name="description"]').value;
-        let radio = document.querySelector('input[name="status"]:checked').value;
+        let title = document.querySelector('input[name="titleEdit"]').value;
+        let category = document.querySelector('input[name="categoryEdit"]').value;
+        let description = document.querySelector('textarea[name="descriptionEdit"]').value;
+        let dateEdited = date;
+        // let radio = document.querySelector('input[name="status"]:checked').value;
         let data = {
             title: title,
             category: category,
             description: description,
+            date: dateEdited.innerText,
         }
         EditData(data,id);
     }
@@ -137,7 +139,7 @@ function renderData(data) {
                                     <div class="Main-Title">${data.title}</div>
                                 </div>
                                 <div class="Title-Btn">
-                                    <button onclick="displayEdit()" class="editBtn">
+                                    <button onclick="displayEdit(HandleEditData(${data.id}))" class="editBtn">
                                         <i class="fa-sharp fa-regular fa-edit "></i>
                                     </button>
                                     <button  onclick="HandleDeleteData(${data.id})" class="deleteBtn">
@@ -164,6 +166,8 @@ for (let i = 0; i < getEditBtn.length; i++) {
         displayEditForm.style.display = "block";
     });
 }
-function displayEdit() {
+function displayEdit(callback) {
     displayEditForm.style.display = "block";
+    callback;
+    
 }
