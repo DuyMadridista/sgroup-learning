@@ -38,75 +38,6 @@
                         <div class="list-count">5</div>
                     </div>
                     <div class="TodoList">
-                        <div class="formContainer">
-                            <div class="FormTitle">
-                                <div class="Title-Content">
-                                    <div class="Kind-Title">Marketing</div>
-                                    <div class="Main-Title">Write SEO actcle for new product</div>
-                                </div>
-                                <div class="Title-Btn">
-                                    <div href="" class="editBtn">
-                                        <i class="fa-sharp fa-regular fa-edit "></i>
-                                    </div>
-                                    <div href="" class="deleteBtn">
-                                        <i class="fa-solid fa-trash "></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-details">
-                                <p>sdadjknmfvbs ajhfmnbjsm jhamnfbakjdm jhemnfbasmdn</p>
-                                <div class="deadline">
-                                    <i class="fa-sharp fa-regular fa-clock"></i>
-                                    <div class="deadline-date">12/12/2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formContainer">
-                            <div class="FormTitle">
-                                <div class="Title-Content">
-                                    <div class="Kind-Title">Marketing</div>
-                                    <div class="Main-Title">Write SEO actcle for new product</div>
-                                </div>
-                                <div class="Title-Btn">
-                                    <div href="" class="editBtn">
-                                        <i class="fa-sharp fa-regular fa-edit "></i>
-                                    </div>
-                                    <div href="" class="deleteBtn">
-                                        <i class="fa-solid fa-trash "></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-details">
-                                <p>sdadjknmfvbs ajhfmnbjsm jhamnfbakjdm jhemnfbasmdn</p>
-                                <div class="deadline">
-                                    <i class="fa-sharp fa-regular fa-clock"></i>
-                                    <div class="deadline-date">12/12/2021</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="formContainer">
-                            <div class="FormTitle">
-                                <div class="Title-Content">
-                                    <div class="Kind-Title">Marketing</div>
-                                    <div class="Main-Title">Write SEO actcle for new product</div>
-                                </div>
-                                <div class="Title-Btn">
-                                    <a href="" class="editBtn">
-                                        <i class="fa-sharp fa-regular fa-edit "></i>
-                                    </a>
-                                    <a href="" class="deleteBtn">
-                                        <i class="fa-solid fa-trash "></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="form-details">
-                                <p>sdadjknmfvbs ajhfmnbjsm jhamnfbakjdm jhemnfbasmdn</p>
-                                <div class="deadline">
-                                    <i class="fa-sharp fa-regular fa-clock"></i>
-                                    <div class="deadline-date">12/12/2021</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
@@ -227,11 +158,11 @@
             <div class="adding-form-title">
                 <label for="">Add New Todo</label>
             </div>
-            <input id="Category" type="text" placeholder="Category">
-            <input id="Title" type="text" placeholder="Title">
-            <textarea id="Description" cols="30" rows="5" placeholder="Description"></textarea>
-            <input id="Deadline" type="date" placeholder="Deadline">
-            <input type="submit" value="submit">
+            <input name="category" id="Category" type="text" placeholder="Category" required>
+            <input name="title" id="Title" type="text" placeholder="Title" required>
+            <textarea name="description" id="Description" cols="30" rows="5" placeholder="Description" required></textarea>
+            <input name="date" id="Deadline" type="date" placeholder="Deadline" required>
+            <input name="submit" type="submit" value="submit">
         </form>
     </div>
     <div id="editing-form" class="adding-form">
@@ -242,17 +173,17 @@
             <div class="adding-form-title">
                 <label for="">Edit Todo</label>
             </div>
-            <input class="input" id="Category" type="text" placeholder="Category">
-            <input class="input" id="Title" type="text" placeholder="Title">
-            <textarea id="Description" cols="30" rows="5" placeholder="Description"></textarea>
+            <input name="categoryEdit" class="input" id="Category" type="text" placeholder="Category" required>
+            <input name="titleEdit" class="input" id="Title" type="text" placeholder="Title" required>
+            <textarea name="descriptionEdit" id="Description" cols="30" rows="5" placeholder="Description" required></textarea>
             <div class="radioBtn" style="flex-direction: row;">
                 <div class="radioChoise">
-                    <input name="status" type="radio" value="Nam" />Todo
+                    <input name="status" type="radio" value="Todo" />Todo
                 </div>
-                <div class="radioChoise"><input name="status" type="radio" value="Nữ" />Doing</div>
-                <div class="radioChoise"><input name="status" type="radio" value="Khác" />Done</div>
+                <div class="radioChoise"><input name="status" type="radio" value="Doing" />Doing</div>
+                <div class="radioChoise"><input name="status" type="radio" value="Done" />Done</div>
             </div>
-            <button style="width: 50%; padding: 0.2rem; margin: 1rem;">Submit</button>
+            <button onclick="HandleEditData(1)" id="AddEditBtn" style="width: 50%; padding: 0.2rem; margin: 1rem;">Add</button>
         </form>
     </div>
     <script src="main.js"></script>
