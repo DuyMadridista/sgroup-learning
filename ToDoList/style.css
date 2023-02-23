@@ -135,6 +135,7 @@ body {
 .TodoList {
     overflow: scroll;
     overflow-x: hidden;
+    overflow-y: auto;
     height: 520px;
     border-radius: 8px;
     padding: 0.2rem 0;
